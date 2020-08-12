@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: beige;
+  font-family: cursive;
+
+}
+/* nw call the classes */
+.person{
+  background: burlywood;
+  width: 17rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 0.3rem;
+  text-align: center;
+  cursor: pointer; 
+  transition: all 0.3s linear;
+
+}
+.person:hover{
+  box-shadow: 2px 5px red;
+}
+.person img{
+  border-radius: 50%;
+  border-radius: o.1rem solid teal;
+  height: 100px;
+  width: 100px;
+}
+.person h4{
+  text-transform: uppercase;
+  margin: 0 0;
+  letter-spacing: .15rem;
+  cursor:pointer;
+
+}
+.text{
+  display: none;
+}
+
+  /* for normal dextop */
+  .person-list{
+  display: flex;
+  flex-direction: row;
+
+}
+/* mobile view */
+@media screen and (max-width: 768px){
+.person-list{
+  display: block;
+}
+
+}
